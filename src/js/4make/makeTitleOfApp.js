@@ -9,7 +9,7 @@ function makeTitleOfApp()
     titleOfApplication.style.fontSize = '17px';
     titleOfApplication.style.color = 'rgb(100, 100, 100)';
     titleOfApplication.style.fontWeight = 'bold';
-    titleOfApplication.href = 'https://github.com/ChristopherAndrewTopalian'
+    titleOfApplication.href = 'https://github.com/ChristopherAndrewTopalian/CATopalian_JavaScript_Video_Investigator'
     titleOfApplication.target = '_blank';
     titleOfApplication.textContent = ' CATopalian JavaScript Video Investigator';
     ba(titleOfApplication);

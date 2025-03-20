@@ -1,6 +1,8 @@
 # CATopalian JavaScript Video Investigator
 A JavaScript video application that allows the person to set a start and end time in a video and repeat the video for the time they specified. This is very good for learning any subject on video.  
 
+USE APP: https://christopherandrewtopalian.github.io/CATopalian_JavaScript_Video_Investigator/CATopalian_JavaScript_Video_Investigator.html
+
 If you enjoy my apps and tutorials please consider buying me a coffee at [paypal.me/keystonermarch](https://www.paypal.com/paypalme/keystonermarch)
 
 ---
