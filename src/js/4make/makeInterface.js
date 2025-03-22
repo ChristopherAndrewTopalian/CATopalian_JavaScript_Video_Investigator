@@ -76,8 +76,9 @@ function makeInterface()
     playButton.textContent = 'Play';
     playButton.onclick = function()
     {
-        isSpecialPlay = false; // Reset the special play flag
-        ge(whichVideo).play();
+        // reset the special play flag
+        isSpecialPlay = false;
+        theVideo.play();
     };
     controlsContainer.append(playButton);
 
@@ -89,7 +90,7 @@ function makeInterface()
     pauseButton.textContent = 'Pause';
     pauseButton.onclick = function()
     {
-        ge(whichVideo).pause();
+        theVideo.pause();
     };
     controlsContainer.append(pauseButton);
 
