@@ -15,7 +15,7 @@ function makeInterface()
     // theVideo
     let theVideo = ce('video');
     theVideo.id = 'theVideo';
-    theVideo.src = 'src/media/video/001.mp4';
+    theVideo.src =`src/media/video/001.mp4`;
     theVideo.controls = true;
     theVideo.style.width = 400 + 'px';
 
