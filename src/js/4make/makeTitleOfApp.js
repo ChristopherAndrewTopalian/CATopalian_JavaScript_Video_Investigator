@@ -2,23 +2,22 @@
 
 function makeTitleOfApp()
 {
-    let titleOfApplication = ce("a");
-    titleOfApplication.style.position = 'absolute';
-    titleOfApplication.style.right = '10px';
-    titleOfApplication.style.bottom = '-70px';
-    titleOfApplication.style.fontSize = '17px';
-    titleOfApplication.style.color = 'rgb(100, 100, 100)';
-    titleOfApplication.style.fontWeight = 'bold';
-    titleOfApplication.href = 'https://github.com/ChristopherAndrewTopalian/CATopalian_JavaScript_Video_Investigator'
-    titleOfApplication.target = '_blank';
-    titleOfApplication.textContent = ' CATopalian JavaScript Video Investigator';
-    ba(titleOfApplication);
+    let titleOfApp = ce("a");
+    titleOfApp.textContent = ' CATopalian JavaScript Video Investigator';
+    titleOfApp.href = 'https://github.com/ChristopherAndrewTopalian/CATopalian_JavaScript_Video_Investigator';
+    titleOfApp.target = '_blank';
+    titleOfApp.style.fontFamily = 'Arial';
+    titleOfApp.style.fontSize = '17px';
+    titleOfApp.style.fontWeight = 'bold';
+    titleOfApp.style.color = 'rgb(100, 100, 100)';
+    titleOfApp.style.textDecoration = 'none';
+    return titleOfApp;
 }
 
 //----//
 
 // Dedicated to God the Father
-// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2025
+// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
 // https://github.com/ChristopherTopalian
 // https://github.com/ChristopherAndrewTopalian
 // https://sites.google.com/view/CollegeOfScripting

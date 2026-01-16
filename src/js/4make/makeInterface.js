@@ -2,7 +2,17 @@
 
 function makeInterface()
 {
+    ba(makeTitleOfApp());
+
+    //-//
+
+    ba(ce('hr'));
+
+    //-//
+
     let mainDiv = ce('div');
+    mainDiv.style.display = 'flex';
+    mainDiv.style.flexDirection = 'row';
     ba(mainDiv);
 
     //-//
@@ -17,10 +27,7 @@ function makeInterface()
     theVideo.id = 'theVideo';
     theVideo.src =`src/media/video/001.mp4`;
     theVideo.controls = true;
-    theVideo.style.width = 400 + 'px';
-
-    //-//
-
+    theVideo.style.width = 300 + 'px';
     // normal timeupdate handler
     theVideo.ontimeupdate = function()
     {
@@ -32,6 +39,11 @@ function makeInterface()
         }
     };
     mainDiv.append(theVideo);
+
+    //-//
+
+    let controlsContainer = ce('div');
+    mainDiv.append(controlsContainer);
 
     //-//
 
@@ -47,15 +59,7 @@ function makeInterface()
     {
         ge('theVideo').currentTime = (theSlider.value / 100) * ge('theVideo').duration;
     };
-    subDiv.append(theSlider);
-
-    //-//
-
-    let controlsContainer = ce('div');
-    controlsContainer.style.position = 'relative';
-    controlsContainer.style.left = ge('theVideo').getBoundingClientRect().right;
-    controlsContainer.style.bottom = ge('theVideo').getBoundingClientRect().top + 300;
-    mainDiv.append(controlsContainer);
+    controlsContainer.append(theSlider);
 
     //-//
 
@@ -100,7 +104,7 @@ function makeInterface()
     specialPlayContainer.style.position = 'relative';
     specialPlayContainer.style.left = ge('theVideo').getBoundingClientRect().right;
     specialPlayContainer.style.bottom = ge('theVideo').getBoundingClientRect().top + 250;
-    mainDiv.append(specialPlayContainer);
+    controlsContainer.append(specialPlayContainer);
 
     //-//
 
@@ -232,7 +236,7 @@ function makeInterface()
 //----//
 
 // Dedicated to God the Father
-// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2025
+// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
 // https://github.com/ChristopherTopalian
 // https://github.com/ChristopherAndrewTopalian
 // https://sites.google.com/view/CollegeOfScripting
